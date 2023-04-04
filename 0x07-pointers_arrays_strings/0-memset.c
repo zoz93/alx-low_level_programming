@@ -3,17 +3,18 @@
  * _memset-fill memory with specific value
  * @s: string adress
  * @b: the desired value
- * @n: nuber of bytes
+ * @n: number of bytes
  * Return: changed array with new value
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	int i = 0;
 
-	for (i = 0; n > 0; i++, n--)
+	for (; n > 0; i++)
 	{
 		s[i] = b;
+		n--;
 	}
 	return (s)
 }
