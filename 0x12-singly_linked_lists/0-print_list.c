@@ -7,12 +7,12 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t i;
+	size_t a;
 	list_t *list;
 
 	list = (list_t *)h;
 
-	for (i = 0; list != NULL; a++)
+	for (a = 0; list != NULL; a++)
 	{
 		if (list->str == NULL)
 		{
@@ -25,5 +25,5 @@ size_t print_list(const list_t *h)
 
 		list = list->next;
 	}
-	return (i);
+	return (a);
 }
