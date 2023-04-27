@@ -1,14 +1,12 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+ * print_after_main - before the main function is executed.
+ **/
+void print_after_main(void) __attribute__((constructor));
 
-int main(void)
+void print_after_main(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
-	return (0);
 }
