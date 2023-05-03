@@ -24,7 +24,7 @@ int _putchar(char c);
 /*prototype _putchar*/
 size_t print_listint(const listint_t *h);
 /*prototype function that prints all the elements of a listint_t list.*/
-size_t listint_len(const listint_t *h);`
+size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
@@ -40,5 +40,6 @@ int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 /*prototype function that inserts a new node at a given position.*/
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
-/*prototype_pefunction_that_delete_the_node_at_index_index_of_a_listint_t.*/
+/*prototy pefunction that deletes the node at index index of a listint_t.*/
+
 #endif /* LISTS_H */
