@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	if (wr < 0)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	if (close(file1) < 0)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file1), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file1), exit(99);
 	if (close(file2) < 0)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file2), exit(99);
 	return (0);
